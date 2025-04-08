@@ -9,9 +9,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration{
-		location = {"file:src/main/webapp/WEB-INF/spring/root-context.xml"}
-		}
+@ContextConfiguration(
+		locations = {"file:src/main/webapp/WEB-INF/spring/root-context.xml"}
+		)
 public class DataSourceTest {
 	
 	// DataSource 객체를 사용 => 객체를 주입해서 사용
